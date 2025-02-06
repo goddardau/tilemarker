@@ -160,3 +160,35 @@ function loadMarkers() {
 window.onload = loadMarkers;
 
 addMarker(500, 500);  // Test marker at (500px, 500px) on the screen
+
+let markers = []; // Store tile markers
+
+function addMarker(x, y) {
+    let marker = document.createElement("div");
+    marker.className = "tile-marker";
+    marker.style.position = "absolute";
+    marker.style.left = `${x}px`;  // Position the marker horizontally
+    marker.style.top = `${y}px`;   // Position the marker vertically
+    marker.style.width = "10px";    // Size of marker
+    marker.style.height = "10px";   // Size of marker
+    marker.style.backgroundColor = "red"; // Color of marker
+    document.body.appendChild(marker);
+
+    markers.push({ x, y }); // Store the position for future reference
+}
+
+function removeMarker(x, y) {
+    // Find and remove the marker at position (x, y)
+    markers = markers.filter(marker => marker.x !== x || marker.y !== y);
+    updateMarkers();
+}
+
+function updateMarkers() {
+    // Remove all existing markers and redraw
+    let markerElements = document.querySelectorAll(".tile-marker");
+    markerElements.forEach(element => element.remove());
+
+    markers.forEach(marker => {
+        addMarker(marker.x, marker.y);
+    });
+}
