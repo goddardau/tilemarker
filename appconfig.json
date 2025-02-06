@@ -1,14 +1,15 @@
 {
-    "id": "tilemarker",
-    "name": "RS3 Tile Marker",
-    "version": "1.0",
-    "category": "Tools",
-    "defaultpage": "index.html",
-    "size": {
-        "width": 500,
-        "height": 400
-    },
-    "permissions": {
-        "readpixels": true
-    }
+	"appName": "tile marker",
+	"description": "osrs tile markers in rs3",
+	"appUrl": "https://starur.github.io/index.html",
+	"configUrl": "https://starur.github.io/appconfig.json",
+	"defaultWidth": 530,
+	"defaultHeight": 315,
+	"minWidth": 137,
+	"minHeight": 55,
+	"maxWidth": 1000,
+	"maxHeight": 1000,
+	"requestHandlers": [ ],
+	"activators": [	],
+	"permissions": "none"
 }
