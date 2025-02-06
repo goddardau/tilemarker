@@ -1,15 +1,16 @@
 {
-    "id": "tilemarker",
-    "name": "RS3 Tile Marker",
-    "version": "1.0",
-    "category": "Tools",
-    "defaultpage": "index.html",
-    "icon": "https://cdn.runeapps.org/icons/tilemarker.png",
-    "size": {
-        "width": 500,
-        "height": 400
-    },
-    "permissions": {
-        "readpixels": true
-    }
+  "appName": "tile marker",
+  "description": "Test.",
+  "appUrl": "./index.html",
+  "configUrl": "./appconfig.compact.json",
+  "iconUrl": "./favicon.png",
+  "defaultWidth": 304,
+  "defaultHeight": 304,
+  "minWidth": 168,
+  "minHeight": 92,
+  "maxWidth": 304,
+  "maxHeight": 304,
+  "requestHandlers": [],
+  "activators": [],
+  "permissions": "gamestate,overlay"
 }
