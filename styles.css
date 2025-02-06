@@ -9,6 +9,11 @@
 
 .tile-marker {
     position: absolute;
+    z-index: 9999; /* Ensure it appears above RS3 */
+}
+
+.tile-marker {
+    position: absolute;
     width: 15px;
     height: 15px;
     background-color: red;
