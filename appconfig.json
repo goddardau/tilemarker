@@ -1,7 +1,7 @@
 {
 	"appName": "tile marker",
 	"description": "osrs tile markers in rs3",
-	"appUrl": "https://starur.github.io/index.html",
+	"appUrl": "https://github.com/goddardau/tilemarker/blob/main/index.html",
 	"configUrl": "https://starur.github.io/appconfig.json",
 	"defaultWidth": 530,
 	"defaultHeight": 315,
