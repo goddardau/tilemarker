@@ -158,3 +158,5 @@ function loadMarkers() {
 }
 
 window.onload = loadMarkers;
+
+addMarker(500, 500);  // Test marker at (500px, 500px) on the screen
