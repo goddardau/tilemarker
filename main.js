@@ -33,6 +33,14 @@ function captureMinimap() {
     saveMarker(x, y);
 }
 
+function drawTileMarker(x, y) {
+    let marker = document.createElement("div");
+    marker.className = "tile-marker";
+    marker.style.left = x + "px";
+    marker.style.top = y + "px";
+    document.body.appendChild(marker);
+}
+
 function snapToGrid(value) {
     return gridSnappingEnabled ? Math.round(value / GRID_SIZE) * GRID_SIZE : value;
 }
