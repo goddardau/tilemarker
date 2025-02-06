@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS3 Tile Marker</title>
+    <script src="https://runeapps.org/lib/alt1lib.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>RS3 Tile Marker</h1>
+    
+    <!-- Controls -->
+    <button id="addMarker">Add Tile Marker</button>
+    <button id="clearMarkers">Clear All Markers</button>
+    <button id="exportMarkers">Export Markers</button>
+    <input type="file" id="importMarkers" accept=".json">
+    <label>
+        <input type="checkbox" id="toggleGrid" checked>
+        Enable Grid Snapping
+    </label>
+    <br>
+
+    <!-- Color and Label Inputs -->
+    <input type="color" id="markerColor" value="#ff0000">
+    <input type="text" id="markerLabel" placeholder="Label (optional)">
+    
+    <div id="overlay"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

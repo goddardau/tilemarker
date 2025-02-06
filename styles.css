@@ -1,0 +1,27 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.tile-marker {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    cursor: grab;
+    user-select: none;
+}
+
+.tile-marker:active {
+    cursor: grabbing;
+}
+
+label, input {
+    margin-bottom: 10px;
+}

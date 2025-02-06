@@ -1,0 +1,15 @@
+{
+    "id": "tilemarker",
+    "name": "RS3 Tile Marker",
+    "version": "1.0",
+    "category": "Tools",
+    "defaultpage": "index.html",
+    "icon": "https://cdn.runeapps.org/icons/tilemarker.png",
+    "size": {
+        "width": 500,
+        "height": 400
+    },
+    "permissions": {
+        "readpixels": true
+    }
+}
